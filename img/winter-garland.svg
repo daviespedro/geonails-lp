@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 112" fill="none" stroke="#173c62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <g id="striped">
+      <circle cy="77" r="17"/>
+      <path d="M-4 59v-6h8v6m-18 10 20-8m-23 17 32-13m-29 23 31-13m-22 18 21-9"/>
+    </g>
+    <g id="plain">
+      <circle cy="77" r="17"/>
+      <path d="M-4 59v-6h8v6m-17 17q0-10 10-12m15 17q-2 8-10 10"/>
+    </g>
+    <g id="rings">
+      <circle cy="77" r="17"/>
+      <path d="M-4 59v-6h8v6m-19 11q15 7 30 0m-30 13q15 7 30 0"/>
+      <circle cx="-8" cy="78" r="1.5"/><circle cy="80" r="1.5"/><circle cx="8" cy="78" r="1.5"/>
+    </g>
+    <path id="star" d="m0-8 2.5 5.3 5.8.8-4.2 4.1 1 5.8L0 5.2-5.1 8l1-5.8-4.2-4.1 5.8-.8Z"/>
+  </defs>
+  <path d="M0 12h1100M0 12q550 48 1100 0"/>
+  <g transform="translate(90)"><path d="M0 19v34"/><use href="#striped"/></g>
+  <g transform="translate(310)"><path d="M0 31v22"/><use href="#plain"/></g>
+  <g transform="translate(550)"><path d="M0 36v17"/><use href="#rings"/></g>
+  <g transform="translate(790)"><path d="M0 31v22"/><use href="#striped"/></g>
+  <g transform="translate(1010)"><path d="M0 19v34"/><use href="#plain"/></g>
+  <path d="M210 26v40m220-31v24m240-24v24m220-33v40"/>
+  <use href="#star" x="210" y="74"/><use href="#star" x="430" y="67"/>
+  <use href="#star" x="670" y="67"/><use href="#star" x="890" y="74"/>
+</svg>

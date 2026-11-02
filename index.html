@@ -15,14 +15,20 @@
   
   <!-- Estilos do site -->
   <link rel="stylesheet" href="style.css">
+  <!-- Para desativar toda a decoração, remova winter-theme da linha <body> abaixo. -->
+  <link rel="stylesheet" href="winter.css">
+  <script src="winter.js" defer></script>
   
 
 </head>
-<body>
+<body class="winter-theme">
+
+<!-- Decorações sazonais: ocultas sem a classe winter-theme. -->
+<div class="winter-decor winter-snow" hidden aria-hidden="true"><span></span><span></span></div>
+<button id="winter-motion" class="winter-decor winter-motion" hidden type="button" aria-pressed="false">Pausar animações</button>
 
 <header>
   <div class="nav-inner">
-    <!-- Logo: troque o texto por <img src="img/logo.png" alt="Geo Nails"> quando tiver o arquivo -->
     <a href="#inicio" class="brand" aria-label="Geo Nails — voltar ao início">Geo Nails</a>
 
     <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
@@ -42,7 +48,11 @@
   </div>
 </header>
 
+<div class="winter-decor winter-garland" hidden aria-hidden="true"></div>
+
 <section id="inicio" class="hero" aria-label="Geo Nails — estúdio de nail design">
+  <p class="winter-decor winter-season-label" hidden>Especial de Natal</p>
+  <div class="winter-decor winter-brand-art" hidden aria-hidden="true"><img src="img/winter-identidade.jpg" alt="" width="1696" height="2528" fetchpriority="high" decoding="async"></div>
   <div class="wrap">
     <h1 class="visually-hidden">Geo Nails</h1>
    
@@ -53,6 +63,8 @@
   </div>
 </section>
 
+
+
 <section id="sobre" class="about-professional">
   <div class="wrap">
     <div class="section-head">
@@ -62,7 +74,7 @@
 
     <div class="professional-card">
       <div class="professional-photo">
-        <img src="img/geonailsft.jpg" alt="Foto da profissional da Geo Nails" width="1080" height="1080" decoding="async">
+        <img src="img/geonailsft.jpg" alt="Foto da profissional da Geo Nails" width="2048" height="2048" decoding="async">
       </div>
 
       <div class="professional-info">
@@ -159,10 +171,12 @@
       <a class="btn-primary location-route" href="https://www.google.com/maps/dir/?api=1&destination=Avenida%20Pico%20das%20Agulhas%20Negras%2C%20849%2C%20Altos%20de%20Santana%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP" target="_blank" rel="noopener noreferrer">Como chegar <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
     </div>
     <div class="location-map">
-      <iframe title="Mapa para Geo Nails, Avenida Pico das Agulhas Negras, 849" src="https://maps.google.com/maps?q=Avenida%20Pico%20das%20Agulhas%20Negras%2C%20849%2C%20Altos%20de%20Santana%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <iframe title="Mapa de satélite para Geo Nails, Avenida Pico das Agulhas Negras, 849" src="https://maps.google.com/maps?q=Avenida%20Pico%20das%20Agulhas%20Negras%2C%20849%2C%20Altos%20de%20Santana%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP&amp;t=k&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
     </div>
   </div>
 </section>
+
+
 
 <section id="agendar" class="booking">
   <div class="wrap">
